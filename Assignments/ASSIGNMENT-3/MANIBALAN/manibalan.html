@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watson Assistant</title>
+</head>
+<body>
+    <div>
+        <div>
+            <div>
+                <img src="https://mybucket7012.s3.jp-tok.cloud-object-storage.appdomain.cloud/sample.jpg" alt="" width="100%">
+            </div>
+            <div>
+                <img src="https://mybucket7012.s3.jp-tok.cloud-object-storage.appdomain.cloud/sample1.jpeg" alt="" width="100%">
+            </div>
+        </div>
+        <div >
+            <div>
+                <img src="https://mybucket7012.s3.jp-tok.cloud-object-storage.appdomain.cloud/sample2.jpeg" alt="" width="100%">
+            </div>
+        </div>
+        <div >
+            <div>
+                <img src="https://mybucket7012.s3.jp-tok.cloud-object-storage.appdomain.cloud/sample3.jpeg" alt="" width="100%">
+            </div>
+            <div>
+                <img src="https://mybucket7012.s3.jp-tok.cloud-object-storage.appdomain.cloud/sample4.jpg" alt="" width="100%">
+            </div>
+        </div>
+       
+    </div>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "357e74bd-638f-4961-9ab4-52cf3783548f", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "79b903c6-812c-4227-9c0b-2250c3c47d5c", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+</html>

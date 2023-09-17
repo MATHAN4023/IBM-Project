@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watson Assistant</title>
+</head>
+<body>
+    <div>
+        <div>
+            <div>
+                <img src="https://jeeva.s3.jp-tok.cloud-object-storage.appdomain.cloud/s3.jpeg" alt="" width="100%">
+            </div>
+            <div>
+                <img src="https://jeeva.s3.jp-tok.cloud-object-storage.appdomain.cloud/au-bg-1.jpg" alt="" width="100%">
+            </div>
+        </div>
+        <div >
+            <div>
+                <img src="https://jeeva.s3.jp-tok.cloud-object-storage.appdomain.cloud/clg.jpg" alt="" width="100%">
+            </div>
+        </div>
+        <div >
+            <div>
+                <img src="https://jeeva.s3.jp-tok.cloud-object-storage.appdomain.cloud/s1.jpeg" alt="" width="100%">
+            </div>
+            <div>
+                <img src="https://jeeva.s3.jp-tok.cloud-object-storage.appdomain.cloud/s2.jpeg" alt="" width="100%">
+            </div>
+        </div>
+       
+    </div>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "63590f41-74a3-49d5-bf5c-d71359b94f3c", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "3a0fe3c3-17f8-4d93-aeeb-5da3467cb05f", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+</html>
